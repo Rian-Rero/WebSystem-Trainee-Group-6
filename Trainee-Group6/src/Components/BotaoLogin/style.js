@@ -5,7 +5,7 @@ export const StyleBotaoLogin = styled.button`
 display: flex;
 justify-content: center;
 align-items: center;
-margin-left: -37px;
+margin-left: -6px;
 padding: 12px 24px;
 margin-right: 60px;
 gap: 50px;
@@ -30,7 +30,7 @@ export const StyleBotaoHome = styled.button`
 display: flex;
 justify-content: center;
 align-items: center;
-margin-left: -37px;
+margin-left: -6px;
 padding: 12px 24px;
 gap: 50px;
 font-size: 32px;
@@ -53,7 +53,7 @@ export const StyleBotaoCadastro = styled.button`
 display: flex;
 justify-content: center;
 align-items: center;
-margin-left: -35px;
+margin-left: 0px;
 padding: 12px 24px;
 width: 245px;
 gap: 20px;
@@ -75,7 +75,7 @@ transition: width 0.3s ease;
 export const StyleBotaoPerfil = styled.button`
 
 display: flex;
-margin-left: -37px;
+margin-left: -6px;
 padding: 12px 24px;
 width: 245px;
 gap: 50px;
@@ -146,6 +146,7 @@ export const StyleBotaoEditProfile = styled.button`
     border: solid 4px #ffffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
 
 &:hover {
     background-color: #09082F;

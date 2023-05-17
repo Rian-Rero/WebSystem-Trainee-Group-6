@@ -6,8 +6,10 @@ export const Coluna = styled.div`
     display: flex;
     flex-direction: column;      
     width: 50%;
+   
     justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 `
 export const Pagina = styled.div`
     display: flex;
@@ -32,7 +34,7 @@ export const Body = styled.div`
     {
        
     }
-    @media screen and (max-width: 600) 
+    @media screen and (max-width: 860) 
     {
         
     }
@@ -89,7 +91,7 @@ export const Coluna2 = styled.div`
     display: flex;      
     flex-direction: column;
     width: 50%;    
-    height: 100%;
+    height: 100%;   
     justify-content: center;
 `
 export const Nome = styled.input`
@@ -98,17 +100,20 @@ export const Nome = styled.input`
     width: 100%;
     height: 58px;
     background: #9998C5;
-    border:solid #09082F;
-    border-top: 2px;
-    border-bottom: 1px;   
+    border: solid 2px #09082F;
+   
+      
+  
 ` 
 export const Cargo = styled.input`
+    border: solid 2px #09082F;       
     text-align: center;      
     box-sizing: border-box;
     width: 67%;
     height: 58px;
     background: #9998C5;
-    border: 2px solid #09082F;
+    border: solid #09082F;
+   
 `
 export const Numero = styled.input`
     text-align: center;      
@@ -143,4 +148,5 @@ export const Tamanho = styled.div`
     display: flex;
     flex-direction: column;
     width: 60%;
+    gap: 2px;
 `

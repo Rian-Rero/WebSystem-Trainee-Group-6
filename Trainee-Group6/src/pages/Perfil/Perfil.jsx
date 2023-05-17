@@ -10,6 +10,7 @@ Linha2, Coluna, Pagina, Tamanho } from "./style";
 import PerfilIcon from "../../Icons/editProfile.svg";
 import {AiOutlineMenu} from "react-icons/ai";
 import  "./script.js";
+import Sider from "../../Components/Sider/Sider";
 
 
 function Perfil()
@@ -29,38 +30,9 @@ function Perfil()
             </DivLogo>
              
 
-        <MenuLateral>
+        <Sider/>
 
-              <Expandir>
-                  <AiOutlineMenu style={{width: 100}}>
-                  </AiOutlineMenu>
-              </Expandir>
-
-              <Lista>
-               
-                      <ItemMenu>
-                        <BotaoHome onClick = {() => navigate("/")}>
-                        </BotaoHome> <br />
-                      </ItemMenu>
-
-                      <ItemMenu>
-                        <BotaoPerfil onClick = {() => navigate("/perfil")}>
-                        </BotaoPerfil> <br />
-                      </ItemMenu>
-                                            
-
-                      <ItemMenu>  
-                        <BotaoLogin onClick = {() => navigate("/login")}>
-                        </BotaoLogin> <br />
-                      </ItemMenu> 
-
-                      <ItemMenu>
-                      <BotaoCadastro onClick = {() => navigate("/cadastro")}>   
-                     </BotaoCadastro> 
-                     </ItemMenu>                     
-                     
-              </Lista>
-        </MenuLateral>  
+              
           
     <Pagina>         
 
