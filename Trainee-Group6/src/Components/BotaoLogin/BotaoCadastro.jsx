@@ -1,12 +1,13 @@
-import {StyleBotaoCadastro} from "./style";
-import cadastroIcon from "../.././Icons/cadastro.svg";
+import {StyleBotaoCadastro, Icon, TxtLink} from "./style";
+import {BiUserPlus} from "react-icons/bi"
 
 function BotaoCadastro(props) 
 {
      
     return (
         <StyleBotaoCadastro onClick={props.onClick}>
-           <img src= {cadastroIcon} alt="Ícone da Cadastro" style={{width: 49,}} />Cadastro
+           <Icon> <BiUserPlus/> </Icon>
+           <TxtLink> Cadastro </TxtLink> 
         </StyleBotaoCadastro>
     )
 }

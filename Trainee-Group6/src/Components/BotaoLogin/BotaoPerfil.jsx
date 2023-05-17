@@ -1,12 +1,13 @@
-import {StyleBotaoPerfil} from "./style";
-import perfilIcon from "../.././Icons/profile.svg";
+import {StyleBotaoPerfil, Icon, TxtLink} from "./style";
+import {CgProfile} from "react-icons/cg"
 
 function BotaoPerfil(props) 
 {
      
     return (
         <StyleBotaoPerfil onClick={props.onClick}>
-            <img src= {perfilIcon} alt="Ícone da Perfil" style={{width: 49,}} />  Perfil
+           <Icon> <CgProfile/> </Icon>
+           <TxtLink> Perfil </TxtLink> 
         </StyleBotaoPerfil>
     )
 }

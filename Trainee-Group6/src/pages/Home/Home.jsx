@@ -4,7 +4,9 @@ import BotaoCadastro from "../../Components/BotaoLogin/BotaoCadastro";
 import BotaoPerfil from "../../Components/BotaoLogin/BotaoPerfil";
 import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
 import { useNavigate } from "react-router-dom";
-import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, DivRetangulo } from "./style";
+import {AiOutlineMenu} from "react-icons/ai";
+import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista, ItemMenu, Expandir, DivRetangulo } from "./style";
+
 
 
 function Home()
@@ -22,21 +24,45 @@ function Home()
                 
                 </PageTitle>
             </DivLogo>
-            <DivLateral>      
-                     
-                <BotaoHome onClick = {() => navigate("/")}>
-                </BotaoHome> <br />
-                
-                 <BotaoPerfil onClick = {() => navigate("/perfil")}>
-                 </BotaoPerfil> <br />
-                 
-                <DivLateral2>
-                <BotaoLogin onClick = {() => navigate("/login")}>
-                 </BotaoLogin> <br />
+            <DivLateral>    
 
-                 <BotaoCadastro onClick = {() => navigate("/cadastro")}>                   
-                 </BotaoCadastro> </DivLateral2>
+        <MenuLateral>
+
+              <Expandir>
+                  <AiOutlineMenu style={{width: 100}}>
+                  </AiOutlineMenu>
+              </Expandir>
+
+              <Lista>
+               
+                      <ItemMenu>
+                        <BotaoHome onClick = {() => navigate("/")}>
+                        </BotaoHome> <br />
+                      </ItemMenu>
+
+                      <ItemMenu>
+                        <BotaoPerfil onClick = {() => navigate("/perfil")}>
+                        </BotaoPerfil> <br />
+                      </ItemMenu>
+                      
+                      <DivLateral2>
+
+                      <ItemMenu>  
+                        <BotaoLogin onClick = {() => navigate("/login")}>
+                        </BotaoLogin> <br />
+                      </ItemMenu> 
+
+                      <ItemMenu>
+                      <BotaoCadastro onClick = {() => navigate("/cadastro")}>   
+                     </BotaoCadastro> 
+                     </ItemMenu>
+                     
+                     </DivLateral2>
+              </Lista>
+        </MenuLateral>  
+
             </DivLateral>
+
             <DivRetangulo> 
               Membros | Horário de Início: | Tempo: | Cargo:
             </DivRetangulo>

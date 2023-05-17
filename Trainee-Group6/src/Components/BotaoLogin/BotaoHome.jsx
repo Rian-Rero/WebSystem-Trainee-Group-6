@@ -1,5 +1,5 @@
-import {StyleBotaoHome, StyleIconHome} from "./style";
-import homeIcon from "../.././Icons/home.svg";
+import {Icon, StyleBotaoHome, StyleIconHome, TxtLink} from "./style";
+import {RiHome5Line} from "react-icons/ri"
 
 
 
@@ -8,9 +8,10 @@ function BotaoHome(props)
      
     return (
         <StyleBotaoHome onClick={props.onClick}>           
-        <img src= {homeIcon} alt="Ícone da Home" style={{width: 49,}} />  Home
+           <Icon> <RiHome5Line/> </Icon>
+           <TxtLink> Home </TxtLink> 
         </StyleBotaoHome>        
-    )
+    ) 
 }
 
 export default BotaoHome;

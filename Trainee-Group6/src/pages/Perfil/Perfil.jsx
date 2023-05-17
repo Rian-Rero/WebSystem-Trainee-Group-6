@@ -2,9 +2,14 @@ import BotaoHome from "../../Components/BotaoLogin/BotaoHome";
 import BotaoLogin from "../../Components/BotaoLogin/BotaoLogin";
 import BotaoCadastro from "../../Components/BotaoLogin/BotaoCadastro";
 import BotaoPerfil from "../../Components/BotaoLogin/BotaoPerfil";
+import BotaoEditProfile from "../../Components/BotaoLogin/BotaoEditProfile";
 import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
 import { useNavigate } from "react-router-dom";
-import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2 } from "./style";
+import {Body, PageTitle, DivLogo, Imagem, MenuLateral, Lista, ItemMenu, Expandir, Coluna2, Nome, Cargo, Numero, Email, Texto,
+Linha2, Coluna, Pagina, Tamanho } from "./style";
+import PerfilIcon from "../../Icons/editProfile.svg";
+import {AiOutlineMenu} from "react-icons/ai";
+import  "./script.js";
 
 
 function Perfil()
@@ -14,7 +19,7 @@ function Perfil()
     return (
 
       <Body>
-        <DivHome>  
+         
             <DivLogo>
             <PageTitle>
 
@@ -22,22 +27,82 @@ function Perfil()
                 
                 </PageTitle>
             </DivLogo>
-            <DivLateral>      
+             
+
+        <MenuLateral>
+
+              <Expandir>
+                  <AiOutlineMenu style={{width: 100}}>
+                  </AiOutlineMenu>
+              </Expandir>
+
+              <Lista>
+               
+                      <ItemMenu>
+                        <BotaoHome onClick = {() => navigate("/")}>
+                        </BotaoHome> <br />
+                      </ItemMenu>
+
+                      <ItemMenu>
+                        <BotaoPerfil onClick = {() => navigate("/perfil")}>
+                        </BotaoPerfil> <br />
+                      </ItemMenu>
+                                            
+
+                      <ItemMenu>  
+                        <BotaoLogin onClick = {() => navigate("/login")}>
+                        </BotaoLogin> <br />
+                      </ItemMenu> 
+
+                      <ItemMenu>
+                      <BotaoCadastro onClick = {() => navigate("/cadastro")}>   
+                     </BotaoCadastro> 
+                     </ItemMenu>                     
                      
-                <BotaoHome onClick = {() => navigate("/")}>
-                </BotaoHome> <br />
+              </Lista>
+        </MenuLateral>  
+          
+    <Pagina>         
 
-                 <BotaoPerfil onClick = {() => navigate("/perfil")}>
-                 </BotaoPerfil> <br />
-                 
-                <DivLateral2>
-                <BotaoLogin onClick = {() => navigate("/login")}>
-                 </BotaoLogin> <br />
+      <Coluna>  
 
-                 <BotaoCadastro onClick = {() => navigate("/cadastro")}>                   
-                 </BotaoCadastro> </DivLateral2>
-            </DivLateral>
-        </DivHome>
+        <Imagem>
+          <img src={PerfilIcon} alt="Ícone do Perfil" />
+        </Imagem>
+        <BotaoEditProfile onClick = {() => navigate("/perfil")}>
+        </BotaoEditProfile>
+
+      </Coluna>
+      
+      <Coluna2>
+        <Tamanho>
+
+            <Nome placeholder="Lara Nascimento">                          
+            </Nome>
+
+            <Linha2>
+
+              <Cargo placeholder="Diretora de Produtos">                            
+              </Cargo>
+              <Numero placeholder="3300">
+              </Numero>
+                        
+            </Linha2>
+
+            <Email placeholder="lara@webtech.com.br">                            
+            </Email>
+
+            <Texto placeholder="Sobre mim:">                            
+            </Texto>
+        </Tamanho>
+
+      </Coluna2>
+    </Pagina> 
+      
+
+              
+            
+        
       </Body>
     )
 }
