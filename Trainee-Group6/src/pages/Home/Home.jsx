@@ -8,6 +8,7 @@ import {AiOutlineMenu} from "react-icons/ai";
 import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista, ItemMenu, Expandir, DivRetangulo } from "./style";
 
 
+
 function Home()
 {
     

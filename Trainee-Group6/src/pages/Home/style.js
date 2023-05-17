@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PoppinsB from "../../font/Poppins-Bold.ttf";
 
 export const DivHome = styled.div`
     background-color: #2F2E6F;
@@ -77,9 +78,7 @@ export const Expandir = styled.div`
 
 
 export const DivRetangulo = styled.div`
-@font-face {
-    font-family: 'Poppins';
-    src: url('../.././fonts/Poppins-Regular.ttf') format('truetype');}
+
     margin-left: 70px;
     text-align: center;
     font-style: normal;

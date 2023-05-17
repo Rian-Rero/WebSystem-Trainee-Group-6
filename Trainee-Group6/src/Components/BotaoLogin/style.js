@@ -133,25 +133,19 @@ transition: background-color 0.3s ease;
 }
 `;
 export const StyleBotaoEditProfile = styled.button`
-
-display: flex;
-justify-content: center;
-align-items: center;
-position: absolute;
-top: 490px;
-left: 378px;
-padding: 12px 24px;
-font-size: 27px;
-width: 253px;
-gap: 8px;
-font-weight: bold;
-text-align: center;
-color: #ffffff;
-background-color: #4F4E8C;
-border-radius: 6px;
-border: solid 4px #ffffff;
-cursor: pointer;
-transition: background-color 0.3s ease;
+   
+    display: flex;  
+    padding: 12px 24px;
+    font-size: 27px;
+    width: 253px;
+    gap: 8px;
+    font-weight: bold;    
+    color: #ffffff;
+    background-color: #4F4E8C;
+    border-radius: 6px;
+    border: solid 4px #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
 &:hover {
     background-color: #09082F;

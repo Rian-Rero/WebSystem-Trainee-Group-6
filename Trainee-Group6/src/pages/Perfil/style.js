@@ -1,33 +1,46 @@
 import styled from "styled-components";
+import PoppinsB from "../../font/Poppins-Black.ttf";
 
-export const DivHome = styled.div`
-    background-color: #2F2E6F;
-    border: none;       
 
+export const Coluna = styled.div`
+    display: flex;
+    flex-direction: column;      
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 `
-export const DivLateral = styled.div`
-       
+export const Pagina = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+`
 
-`
-export const DivLateral2 = styled.div`
-   
-`
 export const Imagem = styled.image`
-    position: absolute;
-    top: 235px;
-    left: 398px;
+       
 
 `
 export const Body = styled.div`
     background-color: #2F2E6F;
-    margin-top: -21px;
-    margin-left: -8px;
-    height: 975px;
+    
+    height: 100vh;
+    @media screen and (max-width: 1330px)
+    {
+       
+    }
+    @media screen and (max-width: 1064)
+    {
+       
+    }
+    @media screen and (max-width: 600) 
+    {
+        
+    }
 `;
 export const DivLogo = styled.div`
     background-color: #09082F;
     height: 129px;
-    width: 1900px;
+    width: 100%;
 `
 
 export const PageTitle = styled.image`
@@ -50,8 +63,6 @@ export const MenuLateral = styled.nav`
     width: 245px;
    
 }
-
-
 `
 
 export const Lista = styled.ul`
@@ -74,10 +85,12 @@ export const Expandir = styled.div`
     margin-left: -18px;
    
 `
-export const DivNomes = styled.div`
-    margin-left: 1000px;
-    margin-top: 140px;
-    width: 495px;
+export const Coluna2 = styled.div`
+    display: flex;      
+    flex-direction: column;
+    width: 50%;    
+    height: 100%;
+    justify-content: center;
 `
 export const Nome = styled.input`
     text-align: center;      
@@ -85,15 +98,17 @@ export const Nome = styled.input`
     width: 100%;
     height: 58px;
     background: #9998C5;
-    border: 4px solid #FFFFFF;
-`
+    border:solid #09082F;
+    border-top: 2px;
+    border-bottom: 1px;   
+` 
 export const Cargo = styled.input`
     text-align: center;      
     box-sizing: border-box;
     width: 67%;
     height: 58px;
     background: #9998C5;
-    border: 4px solid #FFFFFF;
+    border: 2px solid #09082F;
 `
 export const Numero = styled.input`
     text-align: center;      
@@ -101,7 +116,7 @@ export const Numero = styled.input`
     width: 33%;
     height: 58px;
     background: #9998C5;
-    border: 4px solid #FFFFFF;
+    border: 2px solid #09082F;
     
 `
 export const  Email = styled.input`
@@ -110,7 +125,7 @@ export const  Email = styled.input`
     width: 100%;
     height: 58px;
     background: #9998C5;
-    border: 4px solid #FFFFFF;
+    border: 2px solid #09082F;
 `
 export const Texto = styled.input`
     text-align: center;      
@@ -118,9 +133,14 @@ export const Texto = styled.input`
     width: 100%;
     height: 361px;
     background: #9998C5;
-    border: 4px solid #FFFFFF;
+    border: 2px solid #09082F;
 `
 export const Linha2 = styled.div`
     display: flex;
     flex-direction: row;
+`
+export const Tamanho = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 `
