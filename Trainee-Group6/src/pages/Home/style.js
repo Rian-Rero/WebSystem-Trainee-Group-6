@@ -97,4 +97,11 @@ export const DivRetangulo = styled.div`
     color: #000000;
 
 `
+export const Logo = styled.div`
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    align-items: end;
+    
+`
 

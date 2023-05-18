@@ -6,12 +6,13 @@ import BotaoEditProfile from "../../Components/BotaoLogin/BotaoEditProfile";
 import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
 import { useNavigate } from "react-router-dom";
 import {Body, PageTitle, DivLogo, Imagem, MenuLateral, Lista, ItemMenu, Expandir, Coluna2, Nome, Cargo, Numero, Email, Texto,
-Linha2, Coluna, Pagina, Tamanho } from "./style";
+Linha2, Coluna, Pagina, Tamanho, Logo } from "./style";
 import PerfilIcon from "../../Icons/editProfile.svg";
 import {AiOutlineMenu} from "react-icons/ai";
 import {CgProfile} from "react-icons/cg"
 import  "./script.js";
 import Sider from "../../Components/Sider/Sider";
+import LogoHeader from "../../Components/LogoHeader/LogoHeader";
 
 
 function Perfil()
@@ -21,15 +22,10 @@ function Perfil()
   return (
 
     <Body>
-         
-      <DivLogo>
-        <PageTitle>
 
-          <BotaoLogoEscrita onClick = {() => navigate("/")}> 
-          </BotaoLogoEscrita>
-          
-        </PageTitle>
-      </DivLogo>
+      <Logo>   
+        <LogoHeader onClick = {() => navigate("/")}/>
+      </Logo>
         
 
       <Sider/>

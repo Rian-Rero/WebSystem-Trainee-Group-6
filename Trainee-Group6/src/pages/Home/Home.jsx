@@ -5,8 +5,9 @@ import BotaoPerfil from "../../Components/BotaoLogin/BotaoPerfil";
 import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
 import { useNavigate } from "react-router-dom";
 import {AiOutlineMenu} from "react-icons/ai";
-import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista, ItemMenu, Expandir, DivRetangulo } from "./style";
+import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista, ItemMenu, Expandir, DivRetangulo,Logo } from "./style";
 import Sider from "../../Components/Sider/Sider";
+import LogoHeader from "../../Components/LogoHeader/LogoHeader";
 
 
 
@@ -19,14 +20,9 @@ function Home()
       <Body>
 
          
-        <DivLogo>
-          <PageTitle>
-
-            <BotaoLogoEscrita onClick = {() => navigate("/")}> 
-            </BotaoLogoEscrita>
-            
-          </PageTitle>          
-        </DivLogo>
+        <Logo>   
+          <LogoHeader onClick = {() => navigate("/")}/>
+        </Logo>
         
         <Sider/>         
         

@@ -40,8 +40,8 @@ export const Imagem = styled.image`
 `
 export const Body = styled.div`
     background-color: #2F2E6F;
-    
-    height: 100vh;
+    font-family:"Poppins";
+    height: 100%;
     @media screen and (max-width: 1330px)
     {
        
@@ -104,10 +104,11 @@ export const Expandir = styled.div`
    
 `
 export const Coluna = styled.div`
+    font-family:"Poppins";
     display: flex;
     flex-direction: column;      
     width: 50%;
-   
+    height: 92%;
     justify-content: center;
     align-items: center;    
     @media screen and (max-width: 1428px)
@@ -117,21 +118,43 @@ export const Coluna = styled.div`
     }
     @media screen and (max-width: 860) 
     {
-        width: 60%;
+        width: 40%;
+        flex-direction: row;
+        
     }
 `
 
 export const Coluna2 = styled.div`
+    font-family:"Poppins";
     display: flex;      
     flex-direction: column;
     width: 50%;    
     height: 100%;   
     justify-content: center;
+    align-items: center;
+    text-align: center;
     @media screen and (max-width: 860) 
     {
-        width: 40%;
-    }
         
+        display: flex;
+        width: 60%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;        
+        margin-left: 0;
+        margin-top: 0px;
+    }
+    @media screen and (max-width: 574) 
+    {              
+       
+        
+    }   
+    @media screen and (max-width: 390) 
+    {              
+       margin-top: 60px;
+        
+    }  
 
 `
 export const Pagina = styled.div`
@@ -204,10 +227,33 @@ export const Linha2 = styled.div`
     display: flex;
     flex-direction: row;
     border: 2px solid #09082F;
+    width: 100%;
 `
 export const Tamanho = styled.div`
+    font-family:"Poppins";
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 27px;
     width: 60%;
     gap: 2px;
+    @media screen and (max-width: 860) 
+    {              
+       width: 100%;
+        
+    }
+    @media screen and (max-width: 574) 
+    {              
+       width: 100%;
+        
+    }
+`
+export const Logo = styled.div`
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    align-items: end;
+    
 `
