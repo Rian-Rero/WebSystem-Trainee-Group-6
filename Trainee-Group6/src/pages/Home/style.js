@@ -78,7 +78,7 @@ export const Expandir = styled.div`
 
 
 export const DivRetangulo = styled.div`
-
+    font-family:"Poppins";
     margin-left: 70px;
     text-align: center;
     font-style: normal;
@@ -96,5 +96,12 @@ export const DivRetangulo = styled.div`
     border-radius: 45px;
     color: #000000;
 
+`
+export const Logo = styled.div`
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    align-items: end;
+    
 `
 

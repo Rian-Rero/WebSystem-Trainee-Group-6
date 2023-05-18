@@ -1,5 +1,8 @@
 import {StyleBotaoLogoEscrita,} from "./style";
 import GroupLogoEscrita from "../.././Icons/Grouplogo.svg";
+
+
+
 function BotaoLogoEscrita(props) 
 {
      

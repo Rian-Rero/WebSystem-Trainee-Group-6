@@ -74,3 +74,11 @@ export const Expandir = styled.div`
     margin-left: -18px;
    
 `
+
+export const Logo = styled.div`
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    align-items: end;
+    
+`
