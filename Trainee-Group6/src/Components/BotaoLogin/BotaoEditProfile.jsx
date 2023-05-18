@@ -1,12 +1,11 @@
 import {StyleBotaoEditProfile} from "./style";
-import editIcon from "../.././Icons/edit.svg";
-
+import {FiEdit} from "react-icons/fi"
 function BotaoEditProfile(props) 
 {
      
     return (
         <StyleBotaoEditProfile onClick={props.onClick}>
-           <img src= {editIcon} alt="Ícone de Edit"/>
+           <FiEdit/>
            Editar Perfil
         </StyleBotaoEditProfile>
     )

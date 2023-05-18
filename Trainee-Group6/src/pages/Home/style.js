@@ -78,7 +78,7 @@ export const Expandir = styled.div`
 
 
 export const DivRetangulo = styled.div`
-
+    font-family:"Poppins";
     margin-left: 70px;
     text-align: center;
     font-style: normal;

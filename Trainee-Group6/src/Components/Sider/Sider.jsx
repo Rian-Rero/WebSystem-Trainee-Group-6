@@ -1,47 +1,28 @@
-import {MenuLateral, Expandir, Lista, ItemMenu, } from "./style";
+import React, {useState} from "react" 
+import {Expandir, } from "./style";
 import BotaoHome from "../BotaoLogin/BotaoHome";
 import BotaoPerfil from "../BotaoLogin/BotaoPerfil";
 import BotaoLogin from "../BotaoLogin/BotaoLogin";
 import BotaoCadastro from "../BotaoLogin/BotaoCadastro";
 import {AiOutlineMenu} from "react-icons/ai";
+import Sidebar from "../Sidebar/sidebar";
 
-function Sider() 
-{
-     
+
+
+const Sider = () => { 
+  const [sidebar, setSidebar] = useState(false)
+  const showSideBar = () => setSidebar(!sidebar)
+    
     return (
         
-        <MenuLateral>
+      
 
-              <Expandir>
-                  <AiOutlineMenu>
-                  </AiOutlineMenu>
-              </Expandir>
+        <Expandir>
+          <AiOutlineMenu onClick = {showSideBar}/>     
+          {sidebar && <Sidebar active={setSidebar} />}     
+        </Expandir>
 
-              <Lista>
-               
-                      <ItemMenu>
-                        <BotaoHome onClick = {() => navigate("/")}>
-                        </BotaoHome> <br />
-                      </ItemMenu>
-
-                      <ItemMenu>
-                        <BotaoPerfil onClick = {() => navigate("/perfil")}>
-                        </BotaoPerfil> <br />
-                      </ItemMenu>
-                                            
-
-                      <ItemMenu>  
-                        <BotaoLogin onClick = {() => navigate("/login")}>
-                        </BotaoLogin> <br />
-                      </ItemMenu> 
-
-                      <ItemMenu>
-                      <BotaoCadastro onClick = {() => navigate("/cadastro")}>   
-                     </BotaoCadastro> 
-                     </ItemMenu>                     
-                     
-              </Lista>
-        </MenuLateral> 
+        
     )
 }
 

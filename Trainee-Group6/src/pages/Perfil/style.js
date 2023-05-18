@@ -1,25 +1,41 @@
 import styled from "styled-components";
 import PoppinsB from "../../font/Poppins-Black.ttf";
 
-
-export const Coluna = styled.div`
-    display: flex;
-    flex-direction: column;      
-    width: 50%;
-   
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-`
-export const Pagina = styled.div`
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
-`
-
 export const Imagem = styled.image`
-       
+    font-size: 2200%;
+    color: white;
+
+    @media screen and (max-width: 1428px)
+    {
+      font-size: 1500%;
+      
+    }  
+    @media screen and (max-width: 1234px)
+    {
+        font-size: 1400%
+    }  
+    @media screen and (max-width: 1136px)
+    {
+        font-size: 1300%;
+    }  
+    @media screen and (max-width: 1040px)
+    {
+        font-size: 1300%;
+    }  
+    @media screen and (max-width: 916px)
+    {
+        font-size: 1300%;
+    }  
+
+    @media screen and (max-width: 1314px)
+    {
+       font-size: 1300%;
+    }
+    @media screen and (max-width: 1040px)
+    {
+       font-size: 1300%;
+    }
+
 
 `
 export const Body = styled.div`
@@ -87,12 +103,48 @@ export const Expandir = styled.div`
     margin-left: -18px;
    
 `
+export const Coluna = styled.div`
+    display: flex;
+    flex-direction: column;      
+    width: 50%;
+   
+    justify-content: center;
+    align-items: center;    
+    @media screen and (max-width: 1428px)
+    {
+      
+      
+    }
+    @media screen and (max-width: 860) 
+    {
+        width: 60%;
+    }
+`
+
 export const Coluna2 = styled.div`
     display: flex;      
     flex-direction: column;
     width: 50%;    
     height: 100%;   
     justify-content: center;
+    @media screen and (max-width: 860) 
+    {
+        width: 40%;
+    }
+        
+
+`
+export const Pagina = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    @media screen and (max-width: 762px)
+    {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
 `
 export const Nome = styled.input`
     text-align: center;      
@@ -101,18 +153,20 @@ export const Nome = styled.input`
     height: 58px;
     background: #9998C5;
     border: solid 2px #09082F;
-   
+    color: black;
       
   
 ` 
 export const Cargo = styled.input`
-    border: solid 2px #09082F;       
+         
     text-align: center;      
     box-sizing: border-box;
     width: 67%;
     height: 58px;
     background: #9998C5;
-    border: solid #09082F;
+    border: none;
+    color: black;
+
    
 `
 export const Numero = styled.input`
@@ -121,7 +175,11 @@ export const Numero = styled.input`
     width: 33%;
     height: 58px;
     background: #9998C5;
-    border: 2px solid #09082F;
+    border-left: 2px solid #09082F;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    color: black;
     
 `
 export const  Email = styled.input`
@@ -131,6 +189,7 @@ export const  Email = styled.input`
     height: 58px;
     background: #9998C5;
     border: 2px solid #09082F;
+    color: black;
 `
 export const Texto = styled.input`
     text-align: center;      
@@ -139,10 +198,12 @@ export const Texto = styled.input`
     height: 361px;
     background: #9998C5;
     border: 2px solid #09082F;
+    color: black;
 `
 export const Linha2 = styled.div`
     display: flex;
     flex-direction: row;
+    border: 2px solid #09082F;
 `
 export const Tamanho = styled.div`
     display: flex;

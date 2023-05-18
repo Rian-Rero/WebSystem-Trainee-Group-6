@@ -9,67 +9,71 @@ import {Body, PageTitle, DivLogo, Imagem, MenuLateral, Lista, ItemMenu, Expandir
 Linha2, Coluna, Pagina, Tamanho } from "./style";
 import PerfilIcon from "../../Icons/editProfile.svg";
 import {AiOutlineMenu} from "react-icons/ai";
+import {CgProfile} from "react-icons/cg"
 import  "./script.js";
 import Sider from "../../Components/Sider/Sider";
 
 
 function Perfil()
 {
-    
-    const navigate = useNavigate();  
-    return (
+      
+  const navigate = useNavigate();  
+  return (
 
-      <Body>
+    <Body>
          
-            <DivLogo>
-            <PageTitle>
+      <DivLogo>
+        <PageTitle>
 
-                <BotaoLogoEscrita onClick = {() => navigate("/")}> </BotaoLogoEscrita>
-                
-                </PageTitle>
-            </DivLogo>
-             
+          <BotaoLogoEscrita onClick = {() => navigate("/")}> 
+          </BotaoLogoEscrita>
+          
+        </PageTitle>
+      </DivLogo>
+        
 
-        <Sider/>
+      <Sider/>
 
               
           
-    <Pagina>         
+        <Pagina>         
 
-      <Coluna>  
+          <Coluna>  
 
-        <Imagem>
-          <img src={PerfilIcon} alt="Ícone do Perfil" />
-        </Imagem>
-        <BotaoEditProfile onClick = {() => navigate("/perfil")}>
-        </BotaoEditProfile>
+            <Imagem>
+              <CgProfile/>
+            </Imagem>
 
-      </Coluna>
+            <BotaoEditProfile onClick = {() => navigate("/perfil")}>
+            </BotaoEditProfile>
+
+          </Coluna>
       
-      <Coluna2>
-        <Tamanho>
+          <Coluna2> 
+            <Tamanho>
 
-            <Nome placeholder="Lara Nascimento">                          
-            </Nome>
+              <Nome placeholder="Lara Nascimento">                          
+              </Nome>
 
-            <Linha2>
+              <Linha2>
 
-              <Cargo placeholder="Diretora de Produtos">                            
-              </Cargo>
-              <Numero placeholder="3300">
-              </Numero>
+                <Cargo placeholder="Diretora de Produtos">                            
+                </Cargo>
+
+                <Numero placeholder="3300">
+                </Numero>
                         
-            </Linha2>
+              </Linha2>
 
-            <Email placeholder="lara@webtech.com.br">                            
-            </Email>
+              <Email placeholder="lara@webtech.com.br">                            
+              </Email>
 
-            <Texto placeholder="Sobre mim:">                            
-            </Texto>
-        </Tamanho>
+              <Texto placeholder="Sobre mim:">                            
+              </Texto>
+            </Tamanho>
 
-      </Coluna2>
-    </Pagina> 
+          </Coluna2>
+        </Pagina> 
       
 
               
