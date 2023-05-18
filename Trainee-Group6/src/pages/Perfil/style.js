@@ -116,13 +116,20 @@ export const Coluna = styled.div`
       
       
     }
-    @media screen and (max-width: 860) 
+    @media screen and (max-width: 860px) 
     {
-        width: 40%;
-        flex-direction: row;
+        width: 50%;
+        flex-direction: column;
+        margin: 80px;
+    }
+    @media screen and (max-width: 574px) 
+    {
+        width: 50%;
+        flex-direction: column;
         
     }
 `
+
 
 export const Coluna2 = styled.div`
     font-family:"Poppins";
@@ -137,22 +144,22 @@ export const Coluna2 = styled.div`
     {
         
         display: flex;
-        width: 60%;
+        width: 50%;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         text-align: center;        
         margin-left: 0;
-        margin-top: 0px;
+        margin-top: 60px;
     }
-    @media screen and (max-width: 574) 
+    @media screen and (max-width: 574px) 
     {              
-       
+        width: 50%;
         
     }   
-    @media screen and (max-width: 390) 
+    @media (max-width: 390px) 
     {              
-       margin-top: 60px;
+        
         
     }  
 
@@ -162,7 +169,7 @@ export const Pagina = styled.div`
     flex-direction: row;
     width: 100%;
     height: 100vh;
-    @media screen and (max-width: 762px)
+    @media screen and (max-width: 860px)
     {
        flex-direction: column;
        justify-content: center;
@@ -236,17 +243,18 @@ export const Tamanho = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 27px;
+    
     width: 60%;
     gap: 2px;
-    @media screen and (max-width: 860) 
-    {              
-       width: 100%;
+    @media  screen and (max-width: 860px) 
+    {         
+       display: flex ;
+       width: 150%;
         
     }
     @media screen and (max-width: 574) 
     {              
-       width: 100%;
+       
         
     }
 `

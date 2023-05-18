@@ -184,7 +184,7 @@ export const StyleBotaoEditProfile = styled.button`
     }  
     @media screen and (max-width: 916px)
     {
-      font-size: 9px;
+      font-size: 10px;
       border: solid 2px #ffffff;
     }  
 
