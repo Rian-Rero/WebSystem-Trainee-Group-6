@@ -7,7 +7,7 @@ import {CgProfile} from "react-icons/cg"
 import SidebarItem from '../SidebarItem/SidebarItem'
 import {AiOutlineMenu} from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-
+import {GoMegaphone} from "react-icons/go"
 
 
 
@@ -25,6 +25,7 @@ const Sidebar = ({ active }) => {
         <SidebarItem Icon={CgProfile} Text="Perfil" onClick = {() => navigate("/perfil")}/>
         <SidebarItem Icon={IoMdLogIn} Text="Login" onClick = {() => navigate("/login")} />
         <SidebarItem Icon={BiUserPlus} Text="Cadastro" onClick = {() => navigate("/cadastro")}/>
+        <SidebarItem Icon={GoMegaphone} Text="Ouvidoria" onClick = {() => navigate("/ouvidoria")}/>      
       </Content>
     </Container>
   )
