@@ -92,61 +92,53 @@ export const Expandir = styled.div`
 
 
 export const DivRetangulo = styled.div`
-
-    
     text-align: center;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 65px;
-    box-sizing: border-box;
-    position: relative;
-    width: 92%;
-    height: 60px;
-    left: 93px;
-    top: 600px;
+    margin-left: 95px;
+    margin-top: 50px;
+
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 350px;
     background: #9998C5;
     color: #2F2E6F;
 
+    border: solid 1px #FFFFFF;
+
 `
+export const Carrosel = styled.img`
+    border-radius: 15px;
+    border: solid 1px #FFFFFF;
+    width: 400px;
+    height: 300px;
 
-
-export const DivQuadro = styled.div`
-
-    text-align: center;
-    font-style: normal;
-    font-weight: 250;
-    font-size: 35px;
-    line-height: 60px;
-    box-sizing: border-box;
-    width: 92%;
-    height: 1200px;
-    position: relative;
-    left: 93px;
-    top: 600px;
-    margin-bottom: 100px;
-    background-color: #9998C5;   
 `
 
 export const Tabela = styled.table`
-    box-sizing: border-box;
     width: 90%;
-    height: 1200px;
-    position: relative;
-    left: 93px;
-    top: 600px;
+    height: 900px;
+    margin-top: 100px;
+    margin-left: 95px;
     background-color: #9998C5;
     
 `
 export const TabelaHeader = styled.th`
-    text-align: left;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     color: #2F2E6F;
     line-height: 80px;
-    position: relative;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    
+    
+    
        
     
    
@@ -155,15 +147,19 @@ export const TabelaHeader = styled.th`
 export const TabelaLinhaH = styled.tr` 
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-bottom: 1px solid  #2F2E6F;
+
+    
+    
 
 
 `
 export const TabelaLinhaD = styled.tr` 
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    border-bottom: 1px solid  #2F2E6F;
 
 `
 export const TabelaCelula = styled.td` 
@@ -172,18 +168,9 @@ export const TabelaCelula = styled.td`
     font-size: 20px;
     color: #2F2E6F;
     line-height: 130px;
-    margin-right: 150px;
-   
+    margin-left: 100px;
+    margin-right: 100px;
     
-    
-    
-    
-    
-    
-
-    
-
-
 
 `
 

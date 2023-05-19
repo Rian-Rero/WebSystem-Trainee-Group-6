@@ -5,7 +5,8 @@ import BotaoPerfil from "../../Components/BotaoLogin/BotaoPerfil";
 import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
 import { useNavigate } from "react-router-dom";
 import {AiOutlineMenu} from "react-icons/ai";
-import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista, ItemMenu, Expandir, DivRetangulo } from "./style";
+import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista,
+   ItemMenu, Expandir, DivRetangulo, Tabela, TabelaHeader, TabelaLinhaH, TabelaLinhaD, TabelaCelula, Carrosel} from "./style";
 
 
 
@@ -64,8 +65,73 @@ function Home()
             </DivLateral>
 
             <DivRetangulo> 
-              Membros | Horário de Início: | Tempo: | Cargo:
+              <Carrosel  src="" alt="CARROSSEL"></Carrosel>
             </DivRetangulo>
+
+            <Tabela>
+              <TabelaLinhaH>
+                <TabelaHeader>Nome</TabelaHeader>
+
+                <TabelaHeader>Chegada</TabelaHeader>
+
+                <TabelaHeader>Tempo</TabelaHeader>
+
+                <TabelaHeader>Cargo</TabelaHeader>
+
+              </TabelaLinhaH>
+
+              <TabelaLinhaD>
+                <TabelaCelula>João Copelli</TabelaCelula>
+
+                <TabelaCelula>12:45</TabelaCelula>
+
+                <TabelaCelula>TIMER</TabelaCelula>
+
+                <TabelaCelula>Treinee</TabelaCelula>
+              </TabelaLinhaD>
+
+              <TabelaLinhaD>
+                <TabelaCelula>João Leão</TabelaCelula>
+
+                <TabelaCelula>13:47</TabelaCelula>
+
+                <TabelaCelula>TIMER</TabelaCelula>
+
+                <TabelaCelula>Treinee</TabelaCelula>
+              </TabelaLinhaD>
+
+              <TabelaLinhaD>
+                <TabelaCelula>Rian Vieira</TabelaCelula>
+
+                <TabelaCelula>9:12</TabelaCelula>
+
+                <TabelaCelula>TIMER</TabelaCelula>
+
+                <TabelaCelula>Treinee</TabelaCelula>
+              </TabelaLinhaD>
+
+              <TabelaLinhaD>
+                <TabelaCelula>Kauan Silva</TabelaCelula>
+
+                <TabelaCelula>10:21</TabelaCelula>
+
+                <TabelaCelula>TIMER</TabelaCelula>
+
+                <TabelaCelula>Treinee</TabelaCelula>
+              </TabelaLinhaD>
+
+              <TabelaLinhaD>
+                <TabelaCelula>Arthur Jorge</TabelaCelula>
+
+                <TabelaCelula>11:34</TabelaCelula>
+
+                <TabelaCelula>TIMER</TabelaCelula>
+
+                <TabelaCelula>Assessor</TabelaCelula>
+              </TabelaLinhaD>
+            </Tabela>
+
+
         </DivHome>
       </Body>
     )
