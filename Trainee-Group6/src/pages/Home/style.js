@@ -91,31 +91,39 @@ export const Expandir = styled.div`
 `
 
 
-export const DivRetangulo = styled.div`
-    text-align: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 65px;
-    margin-left: 95px;
-    margin-top: 50px;
-
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 350px;
-    background: #9998C5;
+export const DivCarrossel = styled.div`
+    margin-left: 350px;
+    margin-top: 70px;
+    overflow: hidden;
+    width: 610px;
+    height: 310px;
+    background: #FFFFFF;
+    
     color: #2F2E6F;
 
-    border: solid 1px #FFFFFF;
+`
+
+export const DivBotoes = styled.div`
 
 `
-export const Carrosel = styled.img`
+export const DivImgCarrossel = styled.div`
+    display: flexbox;
+    justify-content:  ;
+    align-items: center;
+    border: solid 2px black;
+
+    
+`
+
+export const ImgCarrosel = styled.img`
+    
+    display: flexbox;
+    align-items: center;
     border-radius: 15px;
     border: solid 1px #FFFFFF;
-    width: 400px;
+    width: 600px;
     height: 300px;
+    
 
 `
 
@@ -136,23 +144,12 @@ export const TabelaHeader = styled.th`
     margin-left: 100px;
     margin-right: 100px;
 
-    
-    
-    
-       
-    
-   
-
 `
 export const TabelaLinhaH = styled.tr` 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid  #2F2E6F;
-
-    
-    
-
 
 `
 export const TabelaLinhaD = styled.tr` 
@@ -170,8 +167,6 @@ export const TabelaCelula = styled.td`
     line-height: 130px;
     margin-left: 100px;
     margin-right: 100px;
-    
 
 `
-
-
+    

@@ -6,8 +6,10 @@ import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
 import { useNavigate } from "react-router-dom";
 import {AiOutlineMenu} from "react-icons/ai";
 import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista,
-   ItemMenu, Expandir, DivRetangulo, Tabela, TabelaHeader, TabelaLinhaH, TabelaLinhaD, TabelaCelula, Carrosel} from "./style";
-
+   ItemMenu, Expandir, Tabela, TabelaHeader, TabelaLinhaH, TabelaLinhaD, TabelaCelula, ImgCarrosel, DivCarrossel, DivImgCarrossel, DivBotoes} from "./style";
+import  img1 from "./imagens/img1.png";
+import  img2 from "./imagens/img2.png";
+import  img3 from "./imagens/img3.png";
 
 
 function Home()
@@ -63,10 +65,34 @@ function Home()
         </MenuLateral>  
 
             </DivLateral>
+            
+            <DivCarrossel>
 
-            <DivRetangulo> 
-              <Carrosel  src="" alt="CARROSSEL"></Carrosel>
-            </DivRetangulo>
+                <DivBotoes>
+                <radio-button></radio-button>
+                <radio-button></radio-button>
+                <radio-button></radio-button>
+                <radio-button></radio-button>
+
+                </DivBotoes>
+
+                <DivImgCarrossel>
+                <ImgCarrosel  src={img1} alt="CARROSSEL"/>
+                </DivImgCarrossel>
+
+                <DivImgCarrossel>
+                <ImgCarrosel  src={img2} alt="CARROSSEL"/>
+                </DivImgCarrossel>
+
+                <DivImgCarrossel>
+                <ImgCarrosel  src={img3} alt="CARROSSEL"/>
+                </DivImgCarrossel>
+
+              
+
+
+
+              </DivCarrossel>
 
             <Tabela>
               <TabelaLinhaH>
