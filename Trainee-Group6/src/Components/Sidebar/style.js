@@ -22,7 +22,7 @@ export const Container = styled.div`
     margin-top: 32px;
     margin-left: 32px;
     cursor: pointer;
-   
+       
   }
   
 
