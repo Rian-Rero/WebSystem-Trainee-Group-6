@@ -6,7 +6,7 @@ import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
 import { useNavigate } from "react-router-dom";
 import {AiOutlineMenu} from "react-icons/ai";
 import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista,
-   ItemMenu, Expandir, Tabela, TabelaHeader, TabelaLinhaH, TabelaLinhaD, TabelaCelula, ImgCarrosel, DivCarrossel, DivImgCarrossel, DivBotoes} from "./style";
+   ItemMenu, Expandir, Tabela, TabelaHeader, TabelaHeader1, TabelaLinhaH, TabelaLinhaD, TabelaCelula1, TabelaCelula, ImgCarrosel, DivCarrossel, DivImgCarrossel, DivBotoes} from "./style";
 import  img1 from "./imagens/img1.png";
 import  img2 from "./imagens/img2.png";
 import  img3 from "./imagens/img3.png";
@@ -96,7 +96,7 @@ function Home()
 
             <Tabela>
               <TabelaLinhaH>
-                <TabelaHeader>Nome</TabelaHeader>
+                <TabelaHeader1>Nome</TabelaHeader1>
 
                 <TabelaHeader>Chegada</TabelaHeader>
 
@@ -107,7 +107,7 @@ function Home()
               </TabelaLinhaH>
 
               <TabelaLinhaD>
-                <TabelaCelula>João Copelli</TabelaCelula>
+                <TabelaCelula1>João Copelli</TabelaCelula1>
 
                 <TabelaCelula>12:45</TabelaCelula>
 

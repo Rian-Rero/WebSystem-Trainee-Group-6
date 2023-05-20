@@ -135,6 +135,17 @@ export const Tabela = styled.table`
     background-color: #9998C5;
     
 `
+export const TabelaHeader1 = styled.th`
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2F2E6F;
+    line-height: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+`
+
 export const TabelaHeader = styled.th`
     font-style: normal;
     font-weight: 600;
@@ -159,6 +170,18 @@ export const TabelaLinhaD = styled.tr`
     border-bottom: 1px solid  #2F2E6F;
 
 `
+export const TabelaCelula1 = styled.td` 
+    font-style: normal;
+    font-weight: 250;
+    font-size: 20px;
+    color: #2F2E6F;
+    line-height: 130px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+
+`
+
 export const TabelaCelula = styled.td` 
     font-style: normal;
     font-weight: 250;
@@ -169,4 +192,3 @@ export const TabelaCelula = styled.td`
     margin-right: 100px;
 
 `
-    
