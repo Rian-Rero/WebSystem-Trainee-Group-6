@@ -5,7 +5,7 @@ function BotaoLogoEscrita(props)
      
     return (
         <StyleBotaoLogoEscrita onClick={props.onClick}>           
-          <img src= {GroupLogoEscrita} alt="Ícone do DashBoard" />
+          <img   src= {GroupLogoEscrita} alt="Ícone do DashBoard" />
         </StyleBotaoLogoEscrita>        
     )
 }

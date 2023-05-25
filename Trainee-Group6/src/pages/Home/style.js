@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import PoppinsB from "../../font/Poppins-Bold.ttf";
 
+
+
 export const DivHome = styled.div`
     position: relative;
-    background-color: #2F2E6F;
+    background-color: #09082F;
     border: none;       
 
 `
@@ -39,7 +41,7 @@ height: 100vh;
 }
 `;
 export const DivLogo = styled.div`
-    background-color: #09082F;
+    background-color: #2F2E6F;
     height: 129px;
     width: 100%;
 `
@@ -49,6 +51,7 @@ export const PageTitle = styled.image`
     top: 2px;
     right: 1170px;
     left: 270px;
+    
     
 `
 export const MenuLateral = styled.nav`
@@ -92,103 +95,26 @@ export const Expandir = styled.div`
 
 
 export const DivCarrossel = styled.div`
-    margin-left: 350px;
-    margin-top: 70px;
-    overflow: hidden;
-    width: 610px;
-    height: 310px;
-    background: #FFFFFF;
-    
+    margin-left: 16%;
+    margin-top: 2%;
+    width: 70%;
+    background: #09082F; 
     color: #2F2E6F;
 
 `
 
-export const DivBotoes = styled.div`
-
-`
-export const DivImgCarrossel = styled.div`
-    display: flexbox;
-    justify-content:  ;
-    align-items: center;
-    border: solid 2px black;
-
-    
-`
-
-export const ImgCarrosel = styled.img`
-    
-    display: flexbox;
-    align-items: center;
-    border-radius: 15px;
-    border: solid 1px #FFFFFF;
-    width: 600px;
-    height: 300px;
-    
+export const ImgCarrossel = styled.img`
+    border-radius: 10px;
+    width: 68%;
+    height: 52vh;
+    margin: 0 auto;  
 
 `
 
 export const Tabela = styled.table`
-    width: 90%;
-    height: 900px;
+    width: 90%;    
     margin-top: 100px;
     margin-left: 95px;
-    background-color: #9998C5;
     
-`
-export const TabelaHeader1 = styled.th`
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: #2F2E6F;
-    line-height: 80px;
-    margin-left: 100px;
-    margin-right: 100px;
-
-`
-
-export const TabelaHeader = styled.th`
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: #2F2E6F;
-    line-height: 80px;
-    margin-left: 100px;
-    margin-right: 100px;
-
-`
-export const TabelaLinhaH = styled.tr` 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid  #2F2E6F;
-
-`
-export const TabelaLinhaD = styled.tr` 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid  #2F2E6F;
-
-`
-export const TabelaCelula1 = styled.td` 
-    font-style: normal;
-    font-weight: 250;
-    font-size: 20px;
-    color: #2F2E6F;
-    line-height: 130px;
-    margin-left: 100px;
-    margin-right: 100px;
-
-
-`
-
-export const TabelaCelula = styled.td` 
-    font-style: normal;
-    font-weight: 250;
-    font-size: 20px;
-    color: #2F2E6F;
-    line-height: 130px;
-    margin-left: 100px;
-    margin-right: 100px;
-
+    
 `

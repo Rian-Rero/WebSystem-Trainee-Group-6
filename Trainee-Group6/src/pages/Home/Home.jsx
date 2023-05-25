@@ -6,11 +6,85 @@ import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
 import { useNavigate } from "react-router-dom";
 import {AiOutlineMenu} from "react-icons/ai";
 import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista,
-   ItemMenu, Expandir, Tabela, TabelaHeader, TabelaHeader1, TabelaLinhaH, TabelaLinhaD, TabelaCelula1, TabelaCelula, ImgCarrosel, DivCarrossel, DivImgCarrossel, DivBotoes} from "./style";
+   ItemMenu, Expandir, Tabela, DivCarrossel,ImgCarrossel} from "./style";
 import  img1 from "./imagens/img1.png";
 import  img2 from "./imagens/img2.png";
 import  img3 from "./imagens/img3.png";
+import { Carousel } from 'antd';
 
+import { Space, Table } from 'antd';
+const columns = [
+  {
+    title: 'Membro',
+    dataIndex: 'nome',
+    key: 'nome',
+    
+  },
+  
+  {
+    tittle: 'cargo',
+    dataIndex: 'cargo',
+    key: 'cargo',
+    
+  },
+  
+  {
+    tittle: 'Chegada',
+    dataIndex: 'chegada',
+    key: 'chegada',
+  },
+
+  {
+    title: 'Tempo',
+    dataIndex: 'tempo',
+    key: 'tempo',
+  },
+
+  {
+    
+    key: 'action',
+    render: () => (
+      <Space size="middle">
+        <a>Sair </a>
+      </Space>
+    ),
+  },
+];
+
+const data = [
+  {
+    key: '1',
+    nome: 'João Copelli',
+    cargo: 'Dev Líder',
+    chegada: '12:45',
+    tempo: '@timestamp',
+  },
+
+  {
+    key: '2',
+    nome: 'João Copelli',
+    cargo: 'Treinee',
+    chegada: '12:45',
+    tempo: '@timestamp',
+  },
+
+  {
+    key: '3',
+    nome: 'João Copelli',
+    cargo: 'Consultor de tecnologia',
+    chegada: '12:45',
+    tempo: '@timestamp'
+  },
+
+  {
+    key: '4',
+    nome: 'João Copelli',
+    cargo: 'Treinee',
+    chegada: '12:45',
+    tempo: '@timestamp'
+  },
+
+];
 
 function Home()
 {
@@ -67,94 +141,28 @@ function Home()
             </DivLateral>
             
             <DivCarrossel>
+              <Carousel autoplay>
+                <div>
+                  <ImgCarrossel src={img1}/>
+                </div>
 
-                <DivBotoes>
-                <radio-button></radio-button>
-                <radio-button></radio-button>
-                <radio-button></radio-button>
-                <radio-button></radio-button>
-
-                </DivBotoes>
-
-                <DivImgCarrossel>
-                <ImgCarrosel  src={img1} alt="CARROSSEL"/>
-                </DivImgCarrossel>
-
-                <DivImgCarrossel>
-                <ImgCarrosel  src={img2} alt="CARROSSEL"/>
-                </DivImgCarrossel>
-
-                <DivImgCarrossel>
-                <ImgCarrosel  src={img3} alt="CARROSSEL"/>
-                </DivImgCarrossel>
-
-              
-
-
-
-              </DivCarrossel>
+                <div>
+                  <ImgCarrossel src={img2}/>
+                </div>
+                <div>
+                  <ImgCarrossel src={img2}/>
+                </div>
+                <div>
+                  <ImgCarrossel src={img3}/>
+                </div>
+              </Carousel>
+               
+            
+            </DivCarrossel>
 
             <Tabela>
-              <TabelaLinhaH>
-                <TabelaHeader1>Nome</TabelaHeader1>
-
-                <TabelaHeader>Chegada</TabelaHeader>
-
-                <TabelaHeader>Tempo</TabelaHeader>
-
-                <TabelaHeader>Cargo</TabelaHeader>
-
-              </TabelaLinhaH>
-
-              <TabelaLinhaD>
-                <TabelaCelula1>João Copelli</TabelaCelula1>
-
-                <TabelaCelula>12:45</TabelaCelula>
-
-                <TabelaCelula>TIMER</TabelaCelula>
-
-                <TabelaCelula>Treinee</TabelaCelula>
-              </TabelaLinhaD>
-
-              <TabelaLinhaD>
-                <TabelaCelula>João Leão</TabelaCelula>
-
-                <TabelaCelula>13:47</TabelaCelula>
-
-                <TabelaCelula>TIMER</TabelaCelula>
-
-                <TabelaCelula>Treinee</TabelaCelula>
-              </TabelaLinhaD>
-
-              <TabelaLinhaD>
-                <TabelaCelula>Rian Vieira</TabelaCelula>
-
-                <TabelaCelula>9:12</TabelaCelula>
-
-                <TabelaCelula>TIMER</TabelaCelula>
-
-                <TabelaCelula>Treinee</TabelaCelula>
-              </TabelaLinhaD>
-
-              <TabelaLinhaD>
-                <TabelaCelula>Kauan Silva</TabelaCelula>
-
-                <TabelaCelula>10:21</TabelaCelula>
-
-                <TabelaCelula>TIMER</TabelaCelula>
-
-                <TabelaCelula>Treinee</TabelaCelula>
-              </TabelaLinhaD>
-
-              <TabelaLinhaD>
-                <TabelaCelula>Arthur Jorge</TabelaCelula>
-
-                <TabelaCelula>11:34</TabelaCelula>
-
-                <TabelaCelula>TIMER</TabelaCelula>
-
-                <TabelaCelula>Assessor</TabelaCelula>
-              </TabelaLinhaD>
+            
+              <Table style={{}}  columns={columns} dataSource={data}/>
             </Tabela>
 
 

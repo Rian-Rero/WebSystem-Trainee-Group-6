@@ -117,12 +117,12 @@ export const StyleBotaoLogoEscrita = styled.button`
 
 display: inline-block;
 padding: 12px 24px;
-width: 245px;
+margin-top: 6px;
 font-size: 27px;
 font-weight: bold;
 text-align: center;
 color: #ffffff;
-background-color: #09082F;
+background-color: #2F2E6F;
 border-radius: 6px;
 border: none;
 cursor: pointer;
