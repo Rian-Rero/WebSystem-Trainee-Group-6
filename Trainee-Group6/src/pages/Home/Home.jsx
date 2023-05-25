@@ -1,34 +1,42 @@
-import BotaoHome from "../../Components/BotaoLogin/BotaoHome";
-import BotaoLogin from "../../Components/BotaoLogin/BotaoLogin";
-import BotaoCadastro from "../../Components/BotaoLogin/BotaoCadastro";
-import BotaoPerfil from "../../Components/BotaoLogin/BotaoPerfil";
-import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
+import { CgProfile } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
-import {AiOutlineMenu} from "react-icons/ai";
-import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista, ItemMenu, Expandir, DivRetangulo,Logo } from "./style";
+import {
+  Body,
+  Imagem,
+  Coluna2,
+  Nome,
+  Cargo,
+  Senha,
+  Email,
+  Texto,
+  Linha2,
+  Coluna,
+  Pagina,
+  Tamanho,
+  Logo,
+  Size,
+  Lateral,
+} from "./style";
 import Sider from "../../Components/Sider/Sider";
 import LogoHeader from "../../Components/LogoHeader/LogoHeader";
+import Carrossel from "../../Components/Carrosel/Carrossel";
 
+function Home() {
+  const navigate = useNavigate();
+  return (
+    <Body>
+      <Logo>
+        <LogoHeader onClick={() => navigate("/")} />
+      </Logo>
+      <Lateral>
+        <Sider />
+      </Lateral>
 
-
-function Home()
-{
-    
-    const navigate = useNavigate();  
-    return (
-
-      <Body>
-
-         
-        <Logo>   
-          <LogoHeader onClick = {() => navigate("/")}/>
-        </Logo>
-        
-        <Sider/>         
-        
-      </Body>
-    )
+      <Pagina>
+        <Coluna></Coluna>
+      </Pagina>
+    </Body>
+  );
 }
-
 
 export default Home;

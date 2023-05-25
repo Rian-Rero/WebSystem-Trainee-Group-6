@@ -1,18 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #4F4E8C;
+  background-color: #23234f;
   position: fixed;
   height: 100%;
   bottom: 0px;
-  font-family:"Poppins";
+  font-family: "Poppins";
   left: 0px;
   width: 250px;
-  left: ${props => props.sidebar ? '0' : '-100%'};
-  animation: showSidebar .4s;
- 
-  
- 
+  left: ${(props) => (props.sidebar ? "0" : "-100%")};
+  animation: showSidebar 0.4s;
 
   > svg {
     position: fixed;
@@ -22,9 +19,7 @@ export const Container = styled.div`
     margin-top: 32px;
     margin-left: 32px;
     cursor: pointer;
-       
   }
-  
 
   @keyframes showSidebar {
     from {
@@ -34,13 +29,10 @@ export const Container = styled.div`
     to {
       opacity: 1;
       width: 245px;
-   
     }
   }
 `;
 
 export const Content = styled.div`
   margin-top: 100px;
-  
-  
 `;

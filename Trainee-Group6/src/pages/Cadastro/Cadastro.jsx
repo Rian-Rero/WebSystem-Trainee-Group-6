@@ -1,33 +1,62 @@
-import BotaoHome from "../../Components/BotaoLogin/BotaoHome";
-import BotaoLogin from "../../Components/BotaoLogin/BotaoLogin";
-import BotaoCadastro from "../../Components/BotaoLogin/BotaoCadastro";
-import BotaoPerfil from "../../Components/BotaoLogin/BotaoPerfil";
-import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
 import { useNavigate } from "react-router-dom";
-import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista, ItemMenu, Expandir, Logo } from "./style";
-import {AiOutlineMenu} from "react-icons/ai";
+import {
+  Body,
+  Imagem,
+  Coluna2,
+  Nome,
+  Cargo,
+  Senha,
+  Email,
+  Texto,
+  Linha2,
+  Coluna,
+  DivGeral,
+  Dados,
+  Logo,
+  Caixa,
+} from "./style";
+import { CgProfile } from "react-icons/cg";
 import Sider from "../../Components/Sider/Sider";
 import LogoHeader from "../../Components/LogoHeader/LogoHeader";
+import LogoBranca from "../../Icons/LogoBranca.png";
 
+function Cadastro() {
+  const navigate = useNavigate();
+  return (
+    <Body>
+      <Logo>
+        <LogoHeader onClick={() => navigate("/")} />
+      </Logo>
 
-function Cadastro()
-{
-    
-    const navigate = useNavigate();  
-    return (
+      <Sider />
 
-      <Body>
+      <DivGeral>
+        <Coluna>
+          <Imagem>
+            <img src={LogoBranca} alt="Logo WebTech" />
+          </Imagem>
+          <Caixa>
+            <Texto placeholder="Vamos realizar o seu primeiro acesso, preencha seus dados e siga as instruçoes:"></Texto>
+          </Caixa>
+        </Coluna>
 
-         
-        <Logo>   
-          <LogoHeader onClick = {() => navigate("/")}/>
-        </Logo>
-        
-        <Sider/>         
-        
-      </Body>
-    )
+        <Coluna2>
+          <Imagem>
+            <CgProfile />
+          </Imagem>
+          <Dados>
+            <Nome placeholder="Nome completo"></Nome>
+
+            <Email placeholder="Email"></Email>
+
+            <Senha placeholder="Insira uma senha de 5 digitos"></Senha>
+
+            <Cargo placeholder="Cargo"></Cargo>
+          </Dados>
+        </Coluna2>
+      </DivGeral>
+    </Body>
+  );
 }
-
 
 export default Cadastro;

@@ -1,20 +1,16 @@
 import styled from "styled-components";
 
-
-
 export const Expandir = styled.div`
-    width: 100%;
-    padding-left: 10px;
-    color: #FFFFFF;
-    font-size: 32px;
-    cursor: pointer;
-    font-family:"Poppins";
-    margin-left: 10px;
-    display: flex;
-  background-color: #4F4E8C; 
+  width: 100%;
+  padding-left: 10px;
+  color: #ffffff;
+  font-size: 32px;
+  cursor: pointer;
+  font-family: "Poppins";
+  margin-left: 10px;
+  display: flex;
+  background-color: #23234f;
   box-shadow: 0 0 20px 3px;
-  
-  
 
   > svg {
     position: fixed;
@@ -26,11 +22,5 @@ export const Expandir = styled.div`
     margin-top: 32px;
     margin-left: 32px;
     cursor: pointer;
-   
   }
-
-    
-   
-`
-
-
+`;

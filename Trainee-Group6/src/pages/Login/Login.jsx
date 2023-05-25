@@ -1,34 +1,54 @@
-import BotaoHome from "../../Components/BotaoLogin/BotaoHome";
-import BotaoLogin from "../../Components/BotaoLogin/BotaoLogin";
-import BotaoCadastro from "../../Components/BotaoLogin/BotaoCadastro";
-import BotaoPerfil from "../../Components/BotaoLogin/BotaoPerfil";
-import BotaoLogoEscrita from "../../Components/BotaoLogin/BotaoLogoEscrita";
 import { useNavigate } from "react-router-dom";
-import { DivHome, DivLateral, Body, PageTitle, DivLogo, DivLateral2, Imagem, MenuLateral, Lista, ItemMenu, Expandir, Logo } from "./style";
-import {AiOutlineMenu} from "react-icons/ai";
+import BotaoEntrar from "../../Components/BotaoLogin/BotaoEntrar";
 import Sider from "../../Components/Sider/Sider";
 import LogoHeader from "../../Components/LogoHeader/LogoHeader";
+import {
+  Body,
+  Imagem,
+  Coluna2,
+  Coluna,
+  Senha,
+  Email,
+  Pagina,
+  Tamanho,
+  Logo,
+  Size,
+  Imagem2,
+} from "./style";
+import { CgProfile } from "react-icons/cg";
+import LogoBranca from "../../Icons/LogoBranca.png";
 
+function Login() {
+  const navigate = useNavigate();
+  return (
+    <Body>
+      <Logo>
+        <LogoHeader onClick={() => navigate("/")} />
+      </Logo>
 
+      <Sider />
 
-function Login()
-{
-    
-    const navigate = useNavigate();  
-    return (
+      <Pagina>
+        <Coluna>
+          <Imagem>
+            <img src={LogoBranca} alt="Logo WebTech" />
+          </Imagem>
+        </Coluna>
+        <Coluna2>
+          <Imagem2>
+            <CgProfile />
+          </Imagem2>
+          <Tamanho>
+            <Email placeholder="lara@webtech.com.br"></Email>
 
-      <Body>
+            <Senha placeholder="lara123"></Senha>
 
-         
-        <Logo>   
-          <LogoHeader onClick = {() => navigate("/")}/>
-        </Logo>
-        
-        <Sider/>         
-        
-      </Body>
-    )
+            <BotaoEntrar />
+          </Tamanho>
+        </Coluna2>
+      </Pagina>
+    </Body>
+  );
 }
-
 
 export default Login;
