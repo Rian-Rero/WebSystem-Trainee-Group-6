@@ -26,6 +26,7 @@ export const Size = styled.div`
 
 export const Coluna = styled.div`
   font-family: "Poppins";
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   width: 40%;

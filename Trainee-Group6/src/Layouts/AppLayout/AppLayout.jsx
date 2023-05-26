@@ -1,4 +1,4 @@
-import { Container, Sob } from "./style";
+import { Container, Sob, Sob1, Conta } from "./style";
 import { Outlet } from "react-router-dom";
 import Sider from "../../Components/Sider/Sider";
 import LogoHeader from "../../Components/LogoHeader/LogoHeader";
@@ -8,11 +8,11 @@ export default function AppLayout() {
   const navigate = useNavigate();
   return (
     <Container>
-      <Sob>
-        <LogoHeader onClick={() => navigate("/")} />
-        <Sider />
-      </Sob>
-
+      <Conta>
+        <Sob>
+          <LogoHeader onClick={() => navigate("/")} />
+        </Sob>
+      </Conta>
       <Outlet />
     </Container>
   );

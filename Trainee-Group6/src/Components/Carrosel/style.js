@@ -6,6 +6,7 @@ export const Body = styled.div`
   font-family: "Poppins";
   height: 100%;
   align-items: start;
+
   justify-content: center;
   width: 100%;
 `;

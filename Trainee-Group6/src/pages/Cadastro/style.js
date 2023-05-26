@@ -24,6 +24,7 @@ export const Caixa = styled.div`
 
 export const Coluna = styled.div`
   font-family: "Poppins";
+  margin-left: 70px;
   display: flex;
   flex-direction: column;
   width: 50%;
