@@ -1,15 +1,10 @@
 import styled from "styled-components";
 
-export const Espacamento = styled.div`
-  margin-top: 350px;
-  margin-bottom: -500px;
-  height: 400px;
-`;
+export const Espacamento = styled.div``;
 
 export const EspacamentoInputs = styled.div`
   margin-top: 200px;
-  margin-bottom: -500px;
-  height: 400px;
+
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -19,11 +14,15 @@ export const EspacamentoInputs = styled.div`
 
 export const Fundo = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #0a0a30;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 `;
 
 export const StyleMsg = styled.div`
+  margin-bottom: 10%;
   font-family: "Poppins";
   background-color: transparent;
   color: #fff;
@@ -44,10 +43,14 @@ export const StyleMsg = styled.div`
 `;
 
 export const StyleSpace = styled.div`
+  margin-top: 5%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: -150px 0 0 0;
+  justify-content: start;
+  gap: 50px;
+  flex-direction: column;
+  height: 100%;
+
   width: 100%;
 `;
 
@@ -58,7 +61,7 @@ export const StyleContatos = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140%;
+  width: 20%;
   height: 40px;
   border: 2px solid #fff;
   text-align: center;

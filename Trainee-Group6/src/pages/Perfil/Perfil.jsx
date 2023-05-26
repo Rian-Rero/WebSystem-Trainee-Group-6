@@ -25,12 +25,6 @@ function Perfil() {
   const navigate = useNavigate();
   return (
     <Body>
-      <Logo>
-        <LogoHeader onClick={() => navigate("/")} />
-      </Logo>
-
-      <Sider />
-
       <Pagina>
         <Coluna>
           <Imagem>

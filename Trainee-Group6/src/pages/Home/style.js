@@ -11,11 +11,11 @@ export const Imagem = styled.image`
 export const Body = styled.div`
   background-color: #0a0a30;
   font-family: "Poppins";
-  height: 100%;
 `;
 export const Size = styled.div`
   display: flex;
-  width: 60%;
+  background-color: #0a0a30;
+  width: 100%;
 `;
 
 export const Coluna = styled.div`
@@ -67,11 +67,12 @@ export const Coluna2 = styled.div`
 
 export const Pagina = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
+  justify-content: center;
   width: 100%;
-  height: 100vh;
-  background-color: #09082f;
+
+  background-color: #0a0a30;
 `;
 export const Nome = styled.input`
   text-align: center;
@@ -156,4 +157,44 @@ export const Logo = styled.div`
 export const Lateral = styled.div`
   position: fixed;
   z-index: 11;
+`;
+export const Lista = styled.ul`
+  height: 100%;
+  list-style-type: none;
+`;
+
+export const ItemMenu = styled.li`
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 20px;
+`;
+export const Expandir = styled.div`
+  width: 100%;
+  padding-left: 10px;
+  color: #ffffff;
+  font-size: 32px;
+  cursor: pointer;
+  margin-left: -18px;
+`;
+
+export const DivCarrossel = styled.div`
+  margin-left: 16%;
+  margin-top: 2%;
+  width: 70%;
+  background: #09082f;
+  color: #2f2e6f;
+`;
+
+export const ImgCarrossel = styled.img`
+  border-radius: 10px;
+  width: 68%;
+  height: 52vh;
+  margin: 0 auto;
+`;
+
+export const Tabela = styled.table`
+  width: 90%;
+  margin-top: 100px;
+  margin-left: 95px;
+  z-index: 100;
 `;

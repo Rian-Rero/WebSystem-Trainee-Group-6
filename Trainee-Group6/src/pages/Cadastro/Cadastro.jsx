@@ -24,12 +24,6 @@ function Cadastro() {
   const navigate = useNavigate();
   return (
     <Body>
-      <Logo>
-        <LogoHeader onClick={() => navigate("/")} />
-      </Logo>
-
-      <Sider />
-
       <DivGeral>
         <Coluna>
           <Imagem>

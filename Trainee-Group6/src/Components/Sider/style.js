@@ -10,7 +10,6 @@ export const Expandir = styled.div`
   margin-left: 10px;
   display: flex;
   background-color: #23234f;
-  box-shadow: 0 0 20px 3px;
 
   > svg {
     position: fixed;

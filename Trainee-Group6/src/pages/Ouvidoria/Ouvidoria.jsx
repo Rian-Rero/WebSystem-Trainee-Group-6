@@ -16,35 +16,21 @@ function Ouvidoria() {
   const navigate = useNavigate();
 
   return (
-    <div>
-      <Fundo>
-        <Logo>
-          <LogoHeader onClick={() => navigate("/")} />
-        </Logo>
-        <div>
-          <Sider></Sider>
-        </div>
-        <Espacamento>
-          <StyleSpace>
-            <StyleMsg>Canais de atendimento</StyleMsg>
-          </StyleSpace>
-        </Espacamento>
-        <StyleSpace>
-          <EspacamentoInputs>
-            <img src="" /> {/*Colocar o ícone do telegone*/}
-            <StyleContatos>
-              <BsFillTelephoneOutboundFill /> Ponto RH: (31)XXXX-XXXX
-            </StyleContatos>
-            <StyleContatos>
-              <BsFillTelephoneOutboundFill /> Central: (31)XXXX-XXXX
-            </StyleContatos>
-            <StyleContatos>
-              <BsFillTelephoneOutboundFill /> Nosso 0800: 0800-XXX-XXXX
-            </StyleContatos>
-          </EspacamentoInputs>
-        </StyleSpace>
-      </Fundo>
-    </div>
+    <Fundo>
+      <StyleSpace>
+        <StyleMsg>Canais de atendimento</StyleMsg>
+        <StyleContatos>
+          <BsFillTelephoneOutboundFill />
+          Ponto RH: (31)XXXX-XXXX
+        </StyleContatos>
+        <StyleContatos>
+          <BsFillTelephoneOutboundFill /> Central: (31)XXXX-XXXX
+        </StyleContatos>
+        <StyleContatos>
+          <BsFillTelephoneOutboundFill /> Nosso 0800: 0800-XXX-XXXX
+        </StyleContatos>
+      </StyleSpace>
+    </Fundo>
   );
 }
 
