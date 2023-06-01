@@ -28,9 +28,9 @@ export const Button = styled.button`
   font-size: 27px;
   gap: 30px;
   color: white;
-  width: 100%;
+  width: 94%;
   padding: 10px;
-  margin-right: 1px;
+  margin-right: 0px;
   cursor: pointer;
   border-radius: 10px;
 

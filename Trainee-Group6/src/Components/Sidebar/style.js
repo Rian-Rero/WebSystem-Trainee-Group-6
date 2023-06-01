@@ -4,21 +4,20 @@ export const Container = styled.div`
   background-color: #23234f;
   position: fixed;
   height: 100%;
-  bottom: 0px;
+  top: 0;
+  cursor: default;
   font-family: "Poppins";
-  left: 0px;
-  width: 250px;
   left: ${(props) => (props.sidebar ? "0" : "-100%")};
   animation: showSidebar 0.4s;
 
   > svg {
     position: fixed;
     color: white;
+    cursor: pointer;
     width: 30px;
     height: 30px;
     margin-top: 32px;
     margin-left: 32px;
-    cursor: pointer;
   }
 
   @keyframes showSidebar {
@@ -34,5 +33,14 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
+  position: relative;
   margin-top: 100px;
+  & > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    font-size: 13px;
+    text-align: center;
+  }
 `;

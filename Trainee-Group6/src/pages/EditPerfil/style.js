@@ -24,28 +24,17 @@ export const Size = styled.div`
 export const Imagem = styled.image`
   font-size: 2200%;
   color: white;
-
-  @media screen and (max-width: 860px) {
-    font-size: 2100%;
-    margin-top: 170px;
-  }
-  @media screen and (max-width: 614px) {
-    font-size: 1800%;
-  }
-  @media screen and (max-width: 614px) {
+  @media screen and (max-width: 342px) {
     font-size: 1500%;
+    > img {
+      width: 100%;
+    }
   }
 `;
 export const Body = styled.div`
   background-color: #0a0a30;
   font-family: "Poppins";
   height: 100%;
-  @media screen and (max-width: 1330px) {
-  }
-  @media screen and (max-width: 1064) {
-  }
-  @media screen and (max-width: 860) {
-  }
 `;
 export const DivLogo = styled.div`
   background-color: #09082f;
@@ -105,7 +94,6 @@ export const Coluna = styled.div`
   @media screen and (max-width: 860px) {
     width: 50%;
     flex-direction: column;
-    margin: 80px;
   }
   @media screen and (max-width: 574px) {
     width: 50%;
@@ -122,20 +110,15 @@ export const Coluna2 = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  @media screen and (max-width: 860) {
+  @media screen and (max-width: 860px) {
     display: flex;
-    width: 50%;
+    width: 80%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-left: 0;
     margin-top: 60px;
-  }
-  @media screen and (max-width: 574px) {
-    width: 50%;
-  }
-  @media (max-width: 390px) {
   }
 `;
 export const Pagina = styled.div`
@@ -175,4 +158,16 @@ export const Logo = styled.div`
   text-align: end;
   justify-content: end;
   align-items: end;
+`;
+export const Div2 = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 400px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
 `;

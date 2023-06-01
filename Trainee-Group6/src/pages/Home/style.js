@@ -11,6 +11,7 @@ export const Imagem = styled.image`
 export const Body = styled.div`
   background-color: #0a0a30;
   font-family: "Poppins";
+  width: 100%;
 `;
 export const Size = styled.div`
   display: flex;
@@ -71,7 +72,7 @@ export const Pagina = styled.div`
   text-align: center;
   justify-content: center;
   width: 100%;
-
+  gap: 150px;
   background-color: #0a0a30;
 `;
 export const Nome = styled.input`
@@ -197,4 +198,17 @@ export const Tabela = styled.table`
   margin-top: 100px;
   margin-left: 95px;
   z-index: 100;
+`;
+
+export const Div2 = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 400px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
 `;

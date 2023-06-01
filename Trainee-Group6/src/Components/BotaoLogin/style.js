@@ -138,7 +138,7 @@ export const StyleBotaoEditProfile = styled.button`
   gap: 8px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #4f4e8c;
+  background-color: transparent;
   border-radius: 20px;
   border: solid 4px #ffffff;
   cursor: pointer;
@@ -149,7 +149,7 @@ export const StyleBotaoEditProfile = styled.button`
   }
 
   &:hover {
-    background-color: #09082f;
+    background-color: #9998c5;
   }
 `;
 
@@ -173,6 +173,7 @@ export const StyleBotaoEntrar = styled.button`
   box-sizing: border-box;
   width: 55%;
   height: 60px;
+  margin-top: 5px;
   background-color: #2f2e6f;
   border: 2px solid white;
   border-radius: 20px;
@@ -192,5 +193,55 @@ export const StyleBotaoEntrar = styled.button`
 
   @media screen and (max-width: 414px) {
     font-size: 100%;
+  }
+`;
+export const StyleBotaoSalvar = styled.button`
+  display: flex;
+  padding: 12px 24px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  width: 270px;
+  gap: 8px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 20px;
+  border: solid 4px #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  @media screen and (max-width: 414px) {
+    width: 200px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: #9998c5;
+  }
+`;
+export const StyleBotaoCadastrar = styled.button`
+  display: flex;
+  padding: 12px 24px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  width: 270px;
+  gap: 8px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+  border-radius: 20px;
+  border: solid 4px #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  @media screen and (max-width: 414px) {
+    width: 200px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: #9998c5;
   }
 `;

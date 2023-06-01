@@ -4,7 +4,9 @@ import PoppinsB from "../font/Poppins-Black.ttf";
 export default createGlobalStyle`
 *{
    
-    box-sizing: border-box;
+  
+    
+ max-width: 100%;
     
     
    

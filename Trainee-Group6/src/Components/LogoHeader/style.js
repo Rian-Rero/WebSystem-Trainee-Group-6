@@ -17,11 +17,14 @@ export const DivLogo = styled.div`
   height: 129px;
   position: fixed;
   width: 100%;
+
+  z-index: 3;
   position: fixed;
 `;
 
 export const PageTitle = styled.image`
   display: flex;
+
   align-items: start;
   justify-content: start;
   text-align: start;
@@ -66,6 +69,7 @@ export const DivLogo2 = styled.div`
   width: 100%;
   display: none;
   position: fixed;
+  z-index: 1;
   @media screen and (max-width: 614px) {
     display: flex;
   }
@@ -80,47 +84,6 @@ export const BotaoLogoEscrita2 = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
-  /* @media screen and (max-width: 566px) {
-        margin-top: 45%;
-        margin-left: 500%;
-        
-           
-    }
-    @media screen and (max-width: 506px) {
-        margin-top: 45%;
-        margin-left: 45%;        
-           
-    }
-    @media screen and (max-width: 436px) {
-        margin-top: 45%;
-        margin-left: 75%;        
-           
-    }
-    @media screen and (max-width: 388px) {
-        margin-top: 45%;
-        margin-left: 95%;        
-           
-    }
-    @media screen and (max-width: 350px) {
-        margin-top: 45%;
-        margin-left: 100%;        
-           
-    }
-    @media screen and (max-width: 338px) {
-        margin-top: 45%;
-        margin-left: 105%;        
-           
-    }
-    @media screen and (max-width: 335px) {
-        margin-top: 45%;
-        margin-left: 60%;        
-           
-    }
-    @media screen and (max-width: 266px) {
-        margin-top: 45%;
-        margin-left: 0%;        
-           
-    } */
 `;
 export const PageTitle2 = styled.image`
   display: flex;

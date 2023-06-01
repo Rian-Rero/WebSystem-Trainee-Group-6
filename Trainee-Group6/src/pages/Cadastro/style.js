@@ -17,7 +17,7 @@ export const Body = styled.div`
 `;
 export const Caixa = styled.div`
   display: flex;
-  width: 60%;
+  width: 50%;
   @media screen and (max-width: 838px) {
   }
 `;
@@ -31,12 +31,12 @@ export const Coluna = styled.div`
   height: 92%;
   justify-content: start;
   align-items: center;
-  @media screen and (max-width: 1428px) {
-  }
+
   @media screen and (max-width: 860px) {
-    width: 100%;
+    display: none;
+    /* width: 100%;
     flex-direction: column;
-    margin: 80px;
+    margin: 80px; */
   }
   @media screen and (max-width: 574px) {
     width: 100%;
@@ -53,7 +53,7 @@ export const Coluna2 = styled.div`
   justify-content: start;
   align-items: center;
   text-align: center;
-  @media screen and (max-width: 860) {
+  @media screen and (max-width: 860px) {
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -76,6 +76,7 @@ export const DivGeral = styled.div`
   width: 100%;
   background-color: #0a0a30;
   height: 100vh;
+
   @media screen and (max-width: 860px) {
     flex-direction: column;
     justify-content: center;
@@ -83,69 +84,26 @@ export const DivGeral = styled.div`
     height: 50%;
   }
 `;
-export const Nome = styled.input`
-  font-family: "Poppins";
-  text-align: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: 58px;
-  background: #9998c5;
-  border-radius: 20px;
-  border: solid 2px #09082f;
-  color: black;
-`;
-export const Cargo = styled.input`
-  font-family: "Poppins";
-  text-align: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: 58px;
-  background: #9998c5;
-  border-radius: 20px;
-  border: 2px solid #09082f;
-  color: black;
-`;
-export const Senha = styled.input`
-  font-family: "Poppins";
-  text-align: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: 58px;
-  background: #9998c5;
-  border-radius: 20px;
-  border: 2px solid #09082f;
 
-  color: black;
-`;
-export const Email = styled.input`
-  font-family: "Poppins";
-  text-align: center;
-  box-sizing: border-box;
-  width: 100%;
-  height: 58px;
-  background: #9998c5;
-  border-radius: 20px;
-  border: 2px solid #09082f;
-  color: black;
-`;
-export const Texto = styled.input`
-  text-align: center;
+export const Texto = styled.div`
   box-sizing: border-box;
   width: 100%;
   font-family: "Poppins";
   height: 292px;
-  background: #9998c5;
-  border: 2px solid #09082f;
+  background: #0a0a30;
+  border: 2px solid #ffff;
   border-radius: 20px;
   color: black;
+  font-size: 18px;
+  color: #9998c5;
+  text-align: center;
+  padding-top: 100px;
+  @media screen and (max-width: 1296px) {
+    font-size: 15px;
+  }
 `;
-export const Linha2 = styled.div`
-  display: flex;
-  flex-direction: row;
-  border: 2px solid #09082f;
-  width: 100%;
-`;
-export const Dados = styled.div`
+
+export const Dados = styled.form`
   font-family: "Poppins";
   display: flex;
   flex-direction: column;
@@ -162,10 +120,42 @@ export const Dados = styled.div`
   @media screen and (max-width: 574) {
   }
 `;
-export const Logo = styled.div`
+
+export const Form = styled.form`
+  width: 100%;
   display: flex;
-  text-align: end;
-  justify-content: end;
-  align-items: end;
-  background-color: #2f2e6f;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Labell = styled.label`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+`;
+export const Put = styled.input`
+  text-align: center;
+  font-family: "Poppins";
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 58px;
+  background: #0a0a30;
+  border-radius: 20px;
+  border: 2px solid #ffff;
+  font-size: 18px;
+  color: #9998c5;
+  &:hover {
+    background-color: #9998c5;
+    color: white;
+  }
+  &:focus {
+    background-color: #9998c5;
+    color: white;
+  }
+  @media screen and (max-width: 1296px) {
+    font-size: 15px;
+  }
 `;

@@ -24,6 +24,7 @@ function LogoHeader(props) {
       </DivLogo>
 
       <DivLogo2>
+        <Sider />
         <PageTitle2>
           <BotaoLogoEscrita2 onClick={props.onClick}>
             <img src={Logo} alt="Ícone do DashBoard" />
