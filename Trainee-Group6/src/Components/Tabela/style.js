@@ -15,13 +15,13 @@ export const TabelaWrapper = styled.div`
 
 export const TabelaContainer = styled.div`
   width: 80vw;
-  margin: 0 auto;
 
   align-items: center;
   justify-content: center;
 `;
 
 export const StyledTable = styled(Table)`
+  margin-left: 70px;
   .custom-row {
     background-color: #0a0a30;
     color: white;
