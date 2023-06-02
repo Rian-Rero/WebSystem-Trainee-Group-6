@@ -10,16 +10,6 @@ export const Imagem = styled.image`
   }
 `;
 
-export const Imagem2 = styled.image`
-  width: 100%;
-
-  @media screen and (max-width: 342px) {
-    font-size: 1500%;
-    > img {
-      width: 100%;
-    }
-  }
-`;
 export const Body = styled.div`
   font-family: "Poppins";
   height: 100%;
@@ -28,7 +18,8 @@ export const Caixa = styled.div`
   display: flex;
   width: 60%;
 
-  @media screen and (max-width: 838px) {
+  @media screen and (max-width: 860px) {
+    width: 100%;
   }
 `;
 
@@ -66,7 +57,7 @@ export const Coluna2 = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  @media screen and (max-width: 860) {
+  @media screen and (max-width: 860px) {
     display: flex;
     width: 60%;
     flex-direction: column;
@@ -74,6 +65,7 @@ export const Coluna2 = styled.div`
     justify-content: center;
     text-align: center;
     margin-left: 0;
+    margin-bottom: 20px;
   }
   @media screen and (max-width: 574px) {
   }
@@ -94,27 +86,7 @@ export const DivGeral = styled.div`
     height: 50%;
   }
 `;
-export const Put = styled.input`
-  font-family: "Poppins";
-  text-align: center;
-  box-sizing: border-box;
-  width: 100%;
-  font-size: 18px;
-  height: 55px;
-  background: transparent;
-  border-radius: 20px;
-  border: solid 2px white;
-  color: white;
-  color: white;
-  &:hover {
-    background-color: #9998c5;
-    color: white;
-  }
-  &:focus {
-    background-color: #9998c5;
-    color: white;
-  }
-`;
+
 export const Nome = styled.div`
   font-family: "Poppins";
   text-align: center;
@@ -128,7 +100,7 @@ export const Nome = styled.div`
   border-radius: 20px;
   border: solid 2px white;
   color: white;
-  color: white;
+  gap: 30px;
   &:hover {
     background-color: #9998c5;
     color: white;
@@ -136,6 +108,34 @@ export const Nome = styled.div`
   &:focus {
     background-color: #9998c5;
     color: white;
+  }
+  @media screen and (max-width: 1170px) {
+    font-size: 14px;
+    gap: 20px;
+  }
+  @media screen and (max-width: 910px) {
+    font-size: 13px;
+    gap: 15px;
+  }
+  @media screen and (max-width: 860px) {
+    width: 100%;
+    font-size: 20px;
+    gap: 30px;
+  }
+  @media screen and (max-width: 522px) {
+    width: 100%;
+    font-size: 17px;
+    gap: 20px;
+  }
+  @media screen and (max-width: 444px) {
+    width: 100%;
+    font-size: 14px;
+    gap: 10px;
+  }
+  @media screen and (max-width: 342px) {
+    width: 100%;
+    font-size: 11px;
+    gap: 10px;
   }
 `;
 
@@ -150,7 +150,8 @@ export const Texto = styled.text`
   border: solid 2px white;
   border-radius: 20px;
   color: white;
-  font-size: 18px;
+  font-size: 30px;
+
   display: flex;
   text-align: center;
   justify-content: center;
@@ -159,17 +160,27 @@ export const Texto = styled.text`
     background-color: #9998c5;
     color: white;
   }
-  &:focus {
-    background-color: #9998c5;
-    color: white;
+
+  @media screen and (max-width: 871px) {
+    font-size: 29px;
+  }
+  @media screen and (max-width: 860px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 428px) {
+    font-size: 26px;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 21px;
+  }
+  @media screen and (max-width: 318px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 300px) {
+    font-size: 17px;
   }
 `;
-export const Linha2 = styled.div`
-  display: flex;
-  flex-direction: row;
-  border: 2px solid #09082f;
-  width: 100%;
-`;
+
 export const Dados = styled.div`
   font-family: "Poppins";
   display: flex;
@@ -187,35 +198,4 @@ export const Dados = styled.div`
   }
   @media screen and (max-width: 574) {
   }
-`;
-export const Logo = styled.div`
-  display: flex;
-  text-align: end;
-  justify-content: end;
-  align-items: end;
-  background-color: #2f2e6f;
-`;
-
-export const Div2 = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 400px;
-  color: white;
-  text-align: center;
-  align-items: center;
-  gap: 5px;
-`;
-
-export const Form = styled.form`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  flex-direction: column;
 `;

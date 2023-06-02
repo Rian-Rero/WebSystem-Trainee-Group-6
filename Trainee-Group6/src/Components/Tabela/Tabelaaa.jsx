@@ -27,6 +27,7 @@ function Tabelaaa() {
 
     const interval = setInterval(() => {
       getSessoes();
+      scroll.scrollTo(tabelaWrapperOffset());
     }, 60000); // 1 minuto em milissegundos
 
     return () => {

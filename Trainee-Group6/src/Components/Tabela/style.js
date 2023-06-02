@@ -22,6 +22,9 @@ export const TabelaContainer = styled.div`
 
 export const StyledTable = styled(Table)`
   margin-left: 70px;
+  @media screen and (max-width: 1892px) {
+    margin-left: 0;
+  }
   .custom-row {
     background-color: #0a0a30;
     color: white;

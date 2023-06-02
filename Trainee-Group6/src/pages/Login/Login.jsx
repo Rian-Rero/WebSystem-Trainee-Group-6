@@ -21,6 +21,7 @@ import LogoBranca from "../../Icons/LogoBranca.png";
 import { useState, useEffect } from "react";
 import api from "../../services/api";
 import useAuthStore from "../../stores/auth";
+import BotaoCadastro from "../../Components/BotaoLogin/BotaoCadastro";
 
 function Login() {
   const [loading, setLoading] = useState(false);
@@ -109,6 +110,7 @@ function Login() {
               </Div1>
               <BotaoEntrar type="submit"> </BotaoEntrar>{" "}
             </Form>
+            <BotaoCadastro onClick={() => navigate("/cadastro")} />
           </Tamanho>
         </Coluna2>
       </Pagina>

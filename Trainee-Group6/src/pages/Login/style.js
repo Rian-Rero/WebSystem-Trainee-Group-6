@@ -52,6 +52,7 @@ export const Coluna2 = styled.div`
   justify-content: start;
   align-items: center;
   text-align: center;
+
   @media screen and (max-width: 1144px) {
     margin-bottom: 100px;
   }
@@ -108,6 +109,24 @@ export const Senha = styled.input`
   @media screen and (max-width: 860px) {
     font-size: 14px;
   }
+  @media screen and (max-width: 1144px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 860px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 660px) {
+    width: 80%;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 660px) {
+    width: 90%;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    font-size: 12px;
+  }
 `;
 export const Email = styled.input`
   text-align: center;
@@ -131,8 +150,23 @@ export const Email = styled.input`
     background-color: #9998c5;
     color: white;
   }
+  @media screen and (max-width: 1144px) {
+    width: 70%;
+  }
   @media screen and (max-width: 860px) {
     font-size: 14px;
+  }
+  @media screen and (max-width: 660px) {
+    width: 80%;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 660px) {
+    width: 90%;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 100%;
+    font-size: 12px;
   }
 `;
 
@@ -143,6 +177,7 @@ export const Tamanho = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 30px;
 
   width: 100%;
   gap: 20px;

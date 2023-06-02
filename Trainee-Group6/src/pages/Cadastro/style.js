@@ -53,6 +53,8 @@ export const Coluna2 = styled.div`
   justify-content: start;
   align-items: center;
   text-align: center;
+  margin-bottom: 30px;
+
   @media screen and (max-width: 860px) {
     display: flex;
     width: 50%;
@@ -103,7 +105,7 @@ export const Texto = styled.div`
   }
 `;
 
-export const Dados = styled.form`
+export const Dados = styled.div`
   font-family: "Poppins";
   display: flex;
   flex-direction: column;
@@ -115,7 +117,7 @@ export const Dados = styled.form`
   gap: 20px;
   @media screen and (max-width: 860px) {
     display: flex;
-    width: 150%;
+    width: 240%;
   }
   @media screen and (max-width: 574) {
   }
@@ -126,6 +128,7 @@ export const Form = styled.form`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 `;
 
 export const Labell = styled.label`
@@ -157,5 +160,8 @@ export const Put = styled.input`
   }
   @media screen and (max-width: 1296px) {
     font-size: 15px;
+  }
+  @media screen and (max-width: 362px) {
+    font-size: 11px;
   }
 `;

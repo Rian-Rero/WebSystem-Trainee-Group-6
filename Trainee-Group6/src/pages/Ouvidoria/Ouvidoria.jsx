@@ -1,7 +1,6 @@
 import {
   Body,
   Imagem,
-  Imagem2,
   Coluna2,
   Texto,
   Nome,
@@ -30,18 +29,24 @@ function Ouvidoria() {
 
         <Coluna2>
           <Caixa>
-            <Texto>
-              Para relatar problemas de acesso ou de funcionamento, entre em
-              contato através de um de nossos canais de atendimento
-            </Texto>
+            <Texto>Fale Conosco:</Texto>
           </Caixa>
           <Dados>
-            <Nome> Canais de Atendimento </Nome>
-            <Nome>Ponto RH: (31)XXXX-XXXX</Nome>
+            <Nome>Canais de Atendimento </Nome>
+            <Nome>
+              <BsFillTelephoneOutboundFill />
+              Ponto RH: (31)XXXX-XXXX
+            </Nome>
 
-            <Nome>Central: (31)XXXX-XXXX</Nome>
+            <Nome>
+              <BsFillTelephoneOutboundFill />
+              Central: (31)XXXX-XXXX
+            </Nome>
 
-            <Nome>0800: 0800-XXX-XXXX</Nome>
+            <Nome>
+              <BsFillTelephoneOutboundFill />
+              0800: 0800-XXX-XXXX
+            </Nome>
           </Dados>
         </Coluna2>
       </DivGeral>

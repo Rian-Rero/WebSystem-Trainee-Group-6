@@ -48,6 +48,7 @@ export const Linha2 = styled.div`
 `;
 export const Texto = styled.text`
   text-align: center;
+  font-family: "Poppins";
   box-sizing: border-box;
   width: 100%;
   height: 361px;
@@ -69,4 +70,15 @@ export const Texto = styled.text`
     color: white;
   }
 `;
-export const Valor = styled.span``;
+export const Valor = styled.span`
+  font-family: "Poppins";
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 420px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 330px) {
+    font-size: 10px;
+  }
+`;
