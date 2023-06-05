@@ -22,15 +22,6 @@ function LogoHeader(props) {
           </BotaoLogoEscrita>
         </PageTitle>
       </DivLogo>
-
-      <DivLogo2>
-        <Sider />
-        <PageTitle2>
-          <BotaoLogoEscrita2 onClick={props.onClick}>
-            <img src={Logo} alt="Ícone do DashBoard" />
-          </BotaoLogoEscrita2>
-        </PageTitle2>
-      </DivLogo2>
     </Body>
   );
 }

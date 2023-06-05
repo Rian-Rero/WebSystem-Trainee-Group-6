@@ -48,75 +48,28 @@ export const StyleBotaoHome = styled.button`
 `;
 export const StyleBotaoCadastro = styled.button`
   display: flex;
+  padding: 12px 24px;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  margin-left: 0px;
-  padding: 12px 24px;
-  width: 25%;
-  gap: 20px;
-  font-size: 32px;
+  font-size: 20px;
+  width: 180px;
+  gap: 8px;
   font-weight: bold;
-  text-align: center;
   color: #ffffff;
-  background-color: #0a0a30;
+  background-color: transparent;
   border-radius: 20px;
-  border: solid 2px white;
+  border: solid 2px #ffffff;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  transition: width 0.3s ease;
-
-  &:hover {
-    background-color: #2f2e6f;
-    color: white;
-  }
-
-  @media screen and (max-width: 1662px) {
-    font-size: 26px;
-    > svg {
-      font-size: 26px;
-    }
-  }
-  @media screen and (max-width: 1490px) {
-    font-size: 20px;
-    & > svg {
-      font-size: 20px;
-      color: red;
-    }
-  }
-  @media screen and (max-width: 1300px) {
-    font-size: 16px;
-    > svg {
-      font-size: 16px;
-    }
-  }
-  @media screen and (max-width: 1128px) {
-    font-size: 11px;
-    > svg {
-      font-size: 11px;
-    }
-  }
-  @media screen and (max-width: 760px) {
-    width: 30%;
-  }
-  @media screen and (max-width: 630px) {
-    width: 40%;
-  }
-  @media screen and (max-width: 474px) {
+  @media screen and (max-width: 424px) {
+    width: 60%;
     font-size: 8px;
   }
-  @media screen and (max-width: 402px) {
-    font-size: 6px;
-    height: 30px;
-  }
-  @media screen and (max-width: 402px) {
-    font-size: 6px;
-    height: 30px;
-    width: 50%;
-  }
-  @media screen and (max-width: 288px) {
-    font-size: 6px;
-    height: 30px;
-    width: 55%;
+
+  &:hover {
+    background-color: #09082f;
+    color: white;
   }
 `;
 

@@ -28,7 +28,7 @@ function Tabelaaa() {
     const interval = setInterval(() => {
       getSessoes();
       scroll.scrollTo(tabelaWrapperOffset());
-    }, 60000); // 1 minuto em milissegundos
+    }, 30000);
 
     return () => {
       clearInterval(interval);
@@ -53,8 +53,8 @@ function Tabelaaa() {
   }, [usuarios]);
 
   const verificarSessaoAtiva = () => {
-    const sessaoAtiva = usuarios.find(
-      (usuario) => usuario.id_usuario._id === idUsuario
+    const sessaoAtiva = usuarios?.find(
+      (usuario) => usuario?.id_usuario?._id === idUsuario
     );
     setTemSessaoAtiva(!!sessaoAtiva);
     organizandoUsuarios();
@@ -126,18 +126,18 @@ function Tabelaaa() {
 
   function organizandoUsuarios() {
     const usuariosOrganizados = usuarios.map((usuario, index) => {
-      const chegada = moment(usuario.createdAt);
+      const chegada = moment(usuario?.createdAt);
       const agora = moment();
       const diffMinutes = agora.diff(chegada, "minutes");
       const horas = Math.floor(diffMinutes / 60);
       const minutos = diffMinutes % 60;
 
       return {
-        nome: usuario.id_usuario.nome,
-        cargo: usuario.id_usuario.cargo,
+        nome: usuario?.id_usuario?.nome,
+        cargo: usuario?.id_usuario?.cargo,
         chegada: chegada.format("DD/MM  H:mm"),
         tempo: `${horas} horas e ${minutos}  minutos`,
-        key: usuario._id,
+        key: usuario?._id,
       };
     });
 
@@ -148,7 +148,6 @@ function Tabelaaa() {
     <Body>
       <TabelaWrapper id="tabela-wrapper">
         <Div3>
-          <h1>Ações:</h1>
           {temSessaoAtiva ? (
             <Botao onClick={() => handleExcluirSessao()}>Sair</Botao>
           ) : (

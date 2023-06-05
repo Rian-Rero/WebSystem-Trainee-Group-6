@@ -69,8 +69,9 @@ export const DivLogo2 = styled.div`
   width: 100%;
   display: none;
   position: fixed;
-  z-index: 1;
+
   @media screen and (max-width: 614px) {
+    z-index: 3;
     display: flex;
   }
 `;
@@ -87,13 +88,9 @@ export const BotaoLogoEscrita2 = styled.button`
 `;
 export const PageTitle2 = styled.image`
   display: flex;
-  align-items: start;
-  justify-content: center;
-  text-align: start;
-  margin-left: 0%;
+  align-items: center;
+  justify-content: end;
+
+  margin-left: 120px;
   flex-direction: row;
-  width: 100%;
-  @media screen and (max-width: 334px) {
-    justify-content: start;
-  }
 `;

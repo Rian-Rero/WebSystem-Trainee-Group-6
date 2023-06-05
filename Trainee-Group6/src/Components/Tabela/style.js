@@ -10,7 +10,7 @@ export const TabelaWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 `;
 
 export const TabelaContainer = styled.div`
